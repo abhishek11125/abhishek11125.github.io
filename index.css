@@ -2,12 +2,14 @@
     margin: 0;
     padding: 0;
     font-family: sans-serif;
+    box-sizing: border-box;
 }
 
 .hero{
     position: relative;
     width: 100%;
     background: #eff4fd;
+    min-height: 700px;
 }
 nav{
     display: flex;
@@ -17,7 +19,7 @@ nav{
     align-items: center;
     justify-content: space-between;
 }
-nav>img{
+nav>a>img{
     height: 80px;
 }
 nav>ul>li{
@@ -42,6 +44,7 @@ nav>ul>li>a:hover{
     font-size: 50px;
     color: #212121;
     margin-bottom: 20px;
+
 }
 span{
     color: orange;
@@ -60,9 +63,8 @@ span{
     margin: 30px 0;
     border-radius: 5px;
 }
-
 .images img{
-   height: 90%;
+   height: 85%;
    position: absolute;
    left: 80%;
    bottom: 0;
@@ -77,5 +79,36 @@ span{
 }
 .images:hover .photo{
     left: 75%;
+}
+.social>a>i{
+    text-decoration: none;
+    color: #000;
+    font-size: 30px;
+    padding: 8px;
+}
+
+#about{
+    background: #eff4fd;
+    border: 1px solid transparent;
+    min-height: 700px;
+}
+#info{
+    width: 40%;
+    margin: 200px auto;
+    text-align: center;
+    padding: 100px;
+    border: 2px solid;
+    border-radius: 20px;
+}
+#info>h1{
+    padding: 20px;
+}
+#info>h1+p{
+    font-size: 25px;
+    padding: 20px;
+}
+#info>p+p{
+    font-size: 18px;
+    line-height: 25px;
 }
 
