@@ -12,10 +12,14 @@
     min-height: 700px;
 }
 nav{
+    z-index: 20;
+    position: sticky;
+    top: 0px;
+    background-color: #eff4fd;
     display: flex;
-    width: 84%;
+    width: 100%;
     margin: auto;
-    padding: 20px;
+    padding: 10px;
     align-items: center;
     justify-content: space-between;
 }
