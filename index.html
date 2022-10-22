@@ -16,22 +16,24 @@
   </head>
   <body>
     <div class="main">
-      <nav>
-       <a href="index.html" class="logo"><p ><<span>Abhishek>/</span></p></a>
+      <div id="navbar">
+        <div class="logo">
+          <a href="index.html" 
+          ><p><<span>Abhishek>/</span></p>
+        </a>
+        </div>
         <ul>
           <li><a href="index.html">HOME</a></li>
           <li><a href="#about">ABOUT ME</a></li>
-          <li><a href="#">SKILLS</a></li>
+          <li><a href="#skills">SKILLS</a></li>
           <li><a href="#">PROJECTS</a></li>
-          <li><a href="#">CONTACT</a></li>
-        </ul>
+          <li><a href="https://drive.google.com/file/d/1mcCRDIrBsnxyFo9XMU0HyrLUeKmOjee6/view?usp=sharing" target="_blank">RESUME</a></li>
+        </div>
       </nav>
       <div class="details">
         <h2>Hi👋</h2>
         <h2>I,m Abhishek <span>Kagale</span></h2>
-        <h1>
-          Java Backend Developer.
-        </h1>
+        <h1>Java Backend Developer.</h1>
         <a href="#">DOWNLOAD RESUME</a>
         <div class="social">
           <a href="https://github.com/abhishek11125" target="_blank"
@@ -43,23 +45,97 @@
             ><i class="fa-brands fa-linkedin"></i
           ></a>
         </div>
-      <div class="images">
-        <img src="./Images/yellow-blob.png" alt="shape" class="shape" />
-        <img src="./Images/profile photo.png" alt="photo" class="photo" />
+        <div class="images">
+          <img src="./Images/yellow-blob.png" alt="shape" class="shape" />
+          <img src="./Images/profile photo.png" alt="photo" class="photo" />
+        </div>
+      </div>
+      <div id="about">
+        <h1 class="sk">About Me</h1>
+        <div id="info">
+          <h3>I'm Abhishek Kagale</h3>
+          <p>
+            Adaptable and flexible backend developer capable of writing
+            production ready code. <br />Looking forward to learning and working
+            with new technologies which can help to achieve personal as well as
+            organizational goals.
+          </p>
+        </div>
+      </div>
+      <div id="mainskills">
+        <h1 class="sk">SKILLS</h1>
+        <div id="skills">
+          <div>
+            <img
+              src="https://img.icons8.com/color/344/html-5--v1.png"
+              alt="html"
+            />
+          </div>
+          <div>
+            <img src="https://img.icons8.com/color/344/css3.png" alt="css" />
+          </div>
+          <div>
+            <img
+              src="https://img.icons8.com/color/344/javascript--v1.png"
+              alt="js"
+            />
+          </div>
+          <div>
+            <img
+              src="https://img.icons8.com/color/344/java-coffee-cup-logo.png"
+              alt="java"
+            />
+          </div>
+          <div>
+            <img
+              src="https://img.icons8.com/color/344/mysql-logo.png"
+              alt="my sql"
+            />
+          </div>
+          <div>
+            <img
+              src="https://img.icons8.com/color/344/spring-logo.png"
+              alt="spring"
+            />
+          </div>
+          <div>
+            <img
+              src="https://img.icons8.com/color/344/amazon-web-services.png"
+              alt="amazon-web-services"
+            />
+          </div>
+        </div>
+      </div>
+      <div id="projects">
+        <h1 class="sk">PROJECTS</h1>
+        <p>These are some project done by me</p>
+        <div class="card">
+          <img src="./Images/The Hindu.png" alt="hindu">
+          <div class="desc">
+            <h3>The Hindu Clone</h3>
+            <p>The Hindu is a online news paper platform where people can get national as well as international level <br>This is a collaborative project build by me and four members</p>
+            <p> Key Features</p>
+            <p><i class="fa-solid fa-play"></i> News along with video feed</p>
+            <p><i class="fa-solid fa-play"></i> User signin and sign up</p>
+            <p><i class="fa-solid fa-play"></i> Subscription plans on click and FAQ's about subscrptions</p>
+            <p><i class="fa-solid fa-play"></i> User friendly surfing interface</p>
+            <h3>Tech Stack</h3>
+            <i class="fa-brands fa-html5"></i>
+            <i class="fa-brands fa-css3"></i>
+            <i class="fa-brands fa-js"></i>
+            <h3>Project Links</h3>
+            <h2><a href="https://github.com/GaneshGanta/unit-2-construct-week-1_The-Hindu" target="_blank"><span class="code">DEMO </span></a><a href="https://github.com/GaneshGanta/unit-2-construct-week-1_The-Hindu"><i class="fa-brands fa-github"></i></a></h2>
+          </div>
+        </div>
+        <div class="card">
+          <img src="./Images/OLX.png" alt="olx">
+          <div class="desc">
+        
+          </div>
+        </div>
       </div>
     </div>
-      <div id="about">
-        <div id="info">
-            <h1>About Me</h1>
-            <p>I'm Abhishek Kagale</p>
-            <p>Adaptable and flexible backend developer capable of writing production ready code.
-                <br>Looking forward to learning and working with new technologies which can help to achieve personal as well as organizational goals.
-            </p>
-        </div>
-    </div>
-    <div id="skills"></div>
-    <div id="Projects"></div>
-    </div>
-      
   </body>
+
+  <script src="./index.js"></script>
 </html>
