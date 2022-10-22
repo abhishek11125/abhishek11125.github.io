@@ -3,13 +3,16 @@
     padding: 0;
     font-family: sans-serif;
     box-sizing: border-box;
-}
-
-.hero{
-    position: relative;
-    width: 100%;
     background: #eff4fd;
-    min-height: 700px;
+}
+html {
+    scroll-behavior: smooth;
+  }
+.logo{
+    font-size: 20px;
+    font-weight: bold;
+    text-decoration: none;
+    color: #000;
 }
 nav{
     z-index: 20;
@@ -43,15 +46,13 @@ nav>ul>li>a:hover{
 .details{
     margin-left: 8%;
     margin-top: 15%;
+    min-height: 600px;
 }
 .details>h1{
     font-size: 50px;
     color: #212121;
     margin-bottom: 20px;
 
-}
-span{
-    color: orange;
 }
 .details>p{
     color: #555;
@@ -70,6 +71,7 @@ span{
 .images img{
    height: 85%;
    position: absolute;
+   background-color: transparent;
    left: 80%;
    bottom: 0;
    transform: translateX(-50%);
@@ -92,15 +94,14 @@ span{
 }
 
 #about{
-    background: #eff4fd;
-    border: 1px solid transparent;
-    min-height: 700px;
+    width: fit-content;
+    margin: auto;
+    min-height: 600px;
 }
 #info{
-    width: 40%;
-    margin: 200px auto;
+    margin: 400px auto;
     text-align: center;
-    padding: 100px;
+    padding: 60px;
     border: 2px solid;
     border-radius: 20px;
 }
@@ -110,6 +111,7 @@ span{
 #info>h1+p{
     font-size: 25px;
     padding: 20px;
+    font-weight: bold;
 }
 #info>p+p{
     font-size: 18px;
