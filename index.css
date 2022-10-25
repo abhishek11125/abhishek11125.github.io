@@ -19,7 +19,7 @@ html {
     align-items: center;
     justify-content: space-between;
 }
-.logo{
+.logo>a{
     font-size: 20px;
     font-weight: bold;
     text-decoration: none;
@@ -137,6 +137,7 @@ html {
     transition: all 1s;
 }
 .sk{
+    margin-top: 40px;
     text-align: center;
     padding: 10px;
 }
@@ -153,6 +154,7 @@ html {
 #projects{
     width: 80%;
     margin: auto;
+    min-height: 600px;
 }
 #projects>p{
     text-align: center;
@@ -164,6 +166,7 @@ html {
     margin: 40px;
     background-color: white;
     position: relative;
+    padding: 20px;
 }
 .card>img{  
     padding: 10px;
