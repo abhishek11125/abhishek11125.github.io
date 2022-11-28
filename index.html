@@ -2,62 +2,85 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Abhishek Kagale Portfolio</title>
+    <title>Abhishek Portfolio</title>
     <link rel="stylesheet" href="./index.css" />
     <link
       rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
-      integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+      integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap" rel="stylesheet">
-<link rel="stylesheet" href=
-"https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
-    <script src=
-"https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js">
-    </script>
-    <script src=
-"https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js">
-    </script>
   </head>
   <body>
-    <div class="main">
+    <div id="main">
       <nav class="navbar navbar-inverse navbar-fixed-top">
         <div role="navigation">
-            <div class="container">
-                <div class="navbar-header">
-                    <button class="navbar-toggle"
-                            type="button" data-toggle="collapse"
-                            data-target=".navbar-collapse">
-                        <span class="sr-only">Toggle navigation</span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                    </button>
-                    <a href="#" class="navbar-brand">Portfolio</a>
-                </div>
-                <div class="navbar-collapse collapse">
-                    <ul class="nav navbar-nav navbar-right">
-                        <li> <a href="./index.html">About</a> </li>
-                        <li><a href="#mainskills">Skills</a> </li>
-                        <li><a href="#projects">Projects</a> </li>
-                        <li><a href="#">Resume</a> </li>
-                    </ul>
-                </div>
+          <div class="container">
+            <div class="navbar-header">
+              <button
+                class="navbar-toggle"
+                type="button"
+                data-toggle="collapse"
+                data-target=".navbar-collapse"
+              >
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              <a href="./index.html" class="navbar-brand">Portfolio</a>
             </div>
+            <div class="navbar-collapse collapse">
+              <ul class="nav navbar-nav navbar-right">
+                <li class="active"><a href="./index.html">Home</a></li>
+                <li><a href="#section2">About</a></li>
+                <li><a href="#section3">Skills</a></li>
+                <li><a href="#section4">Projects</a></li>
+                <li><a href="#">Resume</a></li>
+              </ul>
+            </div>
+          </div>
         </div>
-    </nav>
-      <div class="details">
-        <h2>Hi👋</h2>
-        <h2>I,m Abhishek <span>Kagale</span></h2>
-        <h1>Java Backend Developer.</h1>
-          <div id="info">
+      </nav>
+      <div id="section1">
+        <div id="intro">
+          <p>Hi👋</p>
+          <p></p>
+          <p>I'm Abhishek <span>Kagale</span></p>
+          <div class="wrapper">
+            <div class="static-txt">I'm</div>
+            <ul class="dynamic-txts">
+              <li><span>Java Backend Developer</span></li>
+            </ul>
+          </div>
+          <a
+            href="#"
+            class="btn btn-primary btn-lg active"
+            role="button"
+            aria-pressed="true"
+            >DOWNLOAD RESUME</a
+          >
+        </div>
+        <div id="pic">
+          <img
+            src="https://www.nicepng.com/png/full/266-2666972_software-developer.png"
+            alt="developer"
+          />
+        </div>
+      </div>
+      <div id="section2">
+        <div id="details">
+          <div>
+            <h1 class="head">About</h1>
+          </div>
+          <div class="info">
             <p>
               Adaptable and flexible Java backend developer capable of writing
               production ready code.Looking forward to learning and working with
@@ -65,109 +88,137 @@
               organizational goals.
             </p>
           </div>
-        <a href="#">DOWNLOAD RESUME</a>
-        <div class="images">
-          <img src="./Images/yellow-blob.png" alt="shape" class="shape" />
-          <img src="./Images/profile photo.png" alt="photo" class="photo" />
+        </div>
+        <div id="photo">
+          <img src="./Abhi P (1).png" alt="profile" />
         </div>
       </div>
-      <div id="mainskills">
-        <h1 class="sk">SKILLS</h1>
-        <div id="skills">
+      <div id="section3">
+        <div id="skill">
+          <h1>Skills</h1>
+        </div>
+        <div id="tags">
           <div>
-            <img
-              src="https://img.icons8.com/color/344/html-5--v1.png"
-              alt="html"
-            />
+            <img src="./hero icons/html-5.png" alt="html" />
           </div>
           <div>
-            <img src="https://img.icons8.com/color/344/css3.png" alt="css" />
+            <img src="./hero icons/css-3.png" alt="css" />
           </div>
           <div>
-            <img
-              src="https://img.icons8.com/color/344/javascript--v1.png"
-              alt="js"
-            />
+            <img src="./hero icons/js.png" alt="js" />
           </div>
           <div>
-            <img
-              src="https://img.icons8.com/color/344/java-coffee-cup-logo.png"
-              alt="java"
-            />
+            <img src="./hero icons/java.png" alt="java" />
           </div>
           <div>
-            <img
-              src="https://img.icons8.com/color/344/mysql-logo.png"
-              alt="my sql"
-            />
+            <img src="./hero icons/spring.512x512 (1).png" alt="spring" />
           </div>
           <div>
-            <img
-              src="https://img.icons8.com/color/344/spring-logo.png"
-              alt="spring"
-            />
+            <img src="./hero icons/hibernate.491x512.png" alt="hibernate" />
           </div>
           <div>
-            <img
-              src="https://img.icons8.com/color/344/amazon-web-services.png"
-              alt="amazon-web-services"
-            />
+            <img src="./hero icons/aws.256x153.png" alt="aws" />
           </div>
         </div>
       </div>
-      <div id="projects">
-        <h1 class="sk">PROJECTS</h1>
-        <p>These are some project done by me</p>
-        <div class="card">
-          <img src="./Images/The Hindu.png" alt="hindu">
-          <div class="desc">
-            <h3>The Hindu Clone</h3>
-            <p>The Hindu is a online news paper platform where people can get national as well as international level <br>This is a collaborative project build by me and four members</p>
-            <h3> Key Features</h3>
-            <p><i class="fa-solid fa-play"></i> News along with video feed</p>
-            <p><i class="fa-solid fa-play"></i> User signin and sign up</p>
-            <p><i class="fa-solid fa-play"></i> Subscription plans on click and FAQ's about subscrptions</p>
-            <p><i class="fa-solid fa-play"></i> User friendly surfing interface</p>
-            <h3>Tech Stack</h3>
-            <i class="fa-brands fa-html5"></i>
-            <i class="fa-brands fa-css3"></i>
-            <i class="fa-brands fa-js"></i>
-            <h3>Project Links</h3>
-            <h2><a href="https://fluffy-quokka-ee2774.netlify.app/" target="_blank"><span class="code">DEMO </span></a><a href="https://github.com/GaneshGanta/unit-2-construct-week-1_The-Hindu"><i class="fa-brands fa-github"></i></a></h2>
+      <div id="section4">
+        <div id="projects">
+          <h1>Projects</h1>
+        </div>
+        <div>
+          <div class="card" style="width: 40rem">
+            <img src="./the_hindu.jpg" class="card-img-top" alt="..." />
+            <div class="card-body">
+              <h5 class="card-title">The Hindu Clone</h5>
+              <p class="card-text">
+                'The Hindu' is a online news platform to access news across
+                national and international level.
+              </p>
+              <h5 class="card-title">Key Features</h5>
+            </div>
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item">News along with video feed</li>
+              <li class="list-group-item">User signin and sign up</li>
+              <li class="list-group-item">
+                Subscription plans on click and FAQ's about subscrptions
+              </li>
+              <li class="list-group-item">User friendly surfing interface</li>
+            </ul>
+            <div class="card-body">
+              <h5 class="card-title">Tech Stack</h5>
+              <i class="fa-brands fa-html5"></i>
+              <i class="fa-brands fa-css3"></i>
+            </div>
+            <div class="card-body">
+              <a
+                href="https://github.com/GaneshGanta/unit-2-construct-week-1_The-Hindu"
+                class="card-link"
+                target="_blank"
+                >GitHub link</a
+              >
+              <a
+                href="https://fluffy-quokka-ee2774.netlify.app/"
+                class="card-link"
+                target="_blank"
+                >Deployed link</a
+              >
+            </div>
+          </div>
+          <div class="card" style="width: 40rem">
+            <img src="./olx.jpg" class="card-img-top" alt="..." />
+            <div class="card-body">
+              <h5 class="card-title">OlX Clone</h5>
+              <p class="card-text">
+                OLX India(clone) offers online local classified ads in India.
+                where users can post ads, and see the ads posted by other users,
+                then can connect with the sellers.
+              </p>
+              <h5 class="card-title">Key Features</h5>
+            </div>
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item">Product details on click</li>
+              <li class="list-group-item">User signin and sign up</li>
+              <li class="list-group-item">Sorting and filtering of products</li>
+              <li class="list-group-item">User friendly website access</li>
+            </ul>
+            <div class="card-body">
+              <h5 class="card-title">Tech Stack</h5>
+              <i class="fa-brands fa-html5"></i>
+              <i class="fa-brands fa-css3"></i>
+              <i class="fa-brands fa-js"></i>
+            </div>
+            <div class="card-body">
+              <a href="#" class="card-link" target="_blank">GitHub Link</a>
+              <a href="#" class="card-link" target="_blank">Deployed link</a>
+            </div>
+          </div>
+          <div class="card" style="width: 40rem">
+            <div class="card-body">
+              <iframe src="https://drive.google.com/file/d/1zuoJ77RwJPie__zyzuApK_jBx5nTvgbr/preview" width="640" height="210" allow="autoplay"></iframe>
+            </div>
+            <div class="card-body">
+              <h5 class="card-title">Brief Battle Human Resources Management</h5>
+              <p class="card-text">
+                This project is about to help organizations to manage their valuable human resources effectively.
+              </p>
+              <h5 class="card-title">Key Features</h5>
+            </div>
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item">Employee Registration</li>
+              <li class="list-group-item">Employee Leave Application</li>
+              <li class="list-group-item">Partial Abstraction on Employee side</li>
+              <li class="list-group-item">Effective Use of JDBC </li>
+            </ul>
+            <div class="card-body">
+              <h5 class="card-title">Tech Stack</h5>
+              <i class="fa-brands fa-java"></i>
+              <i class="fa-solid fa-database"> MySQL</i>
+            </div>
           </div>
         </div>
-        <div class="card">
-          <img src="./Images/OLX.png" alt="olx">
-          <div class="desc">
-            <h3>OLX Clone</h3>
-            <p>OLX India(clone) offers online local classified ads in India. where users can post ads, and see the ads posted by other users, then can connect with the sellers.</p>
-            <h3> Key Features</h3>
-            <p><i class="fa-solid fa-play"></i> Product details on click</p>
-            <p><i class="fa-solid fa-play"></i> User signin and sign up</p>
-            <p><i class="fa-solid fa-play"></i> Sorting and filtering of products</p>
-            <h3>Tech Stack</h3>
-            <i class="fa-brands fa-html5"></i>
-            <i class="fa-brands fa-css3"></i>
-            <i class="fa-brands fa-js"></i>
-            <h3>Project Links</h3>
-            <h2><a href="https://classy-starburst-3b7522.netlify.app/" target="_blank"><span class="code">DEMO </span></a><a href="https://github.com/amanvyas1/obeisant-stem-2172"><i class="fa-brands fa-github"></i></a></h2>
-          </div>
-        </div>
-      </div>
-      <div id="stats">
-        <h1 class="sk">GIT HUB STATESTICS</h1>
-        <img src="" alt="" />
-        <img
-          src="https://activity-graph.herokuapp.com/graph?username=abhishek11125&bg_color=1a1b27&color=70a5fd&line=5BCDEC&point=FFFFFF&hide_border=true"
-          alt="contribution graph"
-        />
-        <img
-          src="https://github-readme-stats.vercel.app/api?username=abhishek11125&show_icons=true&theme=tokyonight"
-          alt="stats"
-        />
       </div>
     </div>
   </body>
-
-  <script src="./index.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
 </html>
