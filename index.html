@@ -6,11 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Abhishek Portfolio</title>
     <link rel="stylesheet" href="./index.css" />
-    <link
+    <!-- <link
       rel="stylesheet"
       href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css"
-    />
+     /> -->
     <link
+      async
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
       integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
@@ -18,80 +19,88 @@
       referrerpolicy="no-referrer"
     />
     <link
+      defer
       rel="stylesheet"
       href="https://unpkg.com/github-calendar@latest/dist/github-calendar-responsive.css"
     />
   </head>
   <body>
     <div id="main">
-      <nav class="navbar navbar-inverse navbar-fixed-top">
-        <div role="navigation">
-          <div class="container">
-            <div class="navbar-header">
-              <button
-                class="navbar-toggle"
-                type="button"
-                data-toggle="collapse"
-                data-target=".navbar-collapse"
-              >
-                <span class="sr-only">Toggle navigation</span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-              </button>
-              <a href="./index.html" class="navbar-brand">Portfolio</a>
-            </div>
-            <div class="navbar-collapse collapse">
-              <ul class="nav navbar-nav navbar-right">
-                <li class="active"><a href="./index.html">Home</a></li>
-                <li><a href="#section2">About</a></li>
-                <li><a href="#section3">Skills</a></li>
-                <li><a href="#section4">Projects</a></li>
-                <li><a href="#">Resume</a></li>
-              </ul>
-            </div>
-          </div>
+      <nav>
+        <div id="logo">
+          <h2>Abhishek</h2>
+        </div>
+        <ul>
+          <li>
+            <a href="#section1">Home</a>
+          </li>
+          <li>
+            <a href="#section2">About</a>
+          </li>
+          <li>
+            <a href="#section3">Skills</a>
+          </li>
+          <li>
+            <a href="#section4">Projects</a>
+          </li>
+          <li>
+            <a href="#section5">Resume</a>
+          </li>
+          <li>
+            <a href="#section5">Contact</a>
+          </li>
+        </ul>
+        <div id="mob_menu">
+          <i class="fa-solid fa-bars" onclick="shownav()"></i>
+        </div>
+        <div id="toggler">
+          <i class="fa-regular fa-rectangle-xmark" onclick="closenav()"></i>
+          <ul>
+            <li>
+              <a href="#section1">Home</a>
+            </li>
+            <li>
+              <a href="#section2">About</a>
+            </li>
+            <li>
+              <a href="#section3">Skills</a>
+            </li>
+            <li>
+              <a href="#section4">Projects</a>
+            </li>
+            <li>
+              <a href="#section5">Resume</a>
+            </li>
+            <li>
+              <a href="#section5">Contact</a>
+            </li>
+          </ul>
         </div>
       </nav>
       <div id="section1">
         <div id="intro">
-          <p>Hi👋</p>
-          <p></p>
-          <p>I'm Abhishek <span>Kagale</span></p>
-          <div class="wrapper">
-            <div class="static-txt">I'm</div>
-            <ul class="dynamic-txts">
-              <li><span>Java Backend Developer</span></li>
-            </ul>
-          </div>
-          <a
-            href="#"
-            class="btn btn-primary btn-lg active"
-            role="button"
-            aria-pressed="true"
-            >DOWNLOAD RESUME</a
-          >
+          <h1>Hi👋</h1>
+           <h1>I'm, Abhishek <span>Kagale</span></h1>
+            <h1>Java Backend Developer</h1>
+            
+            <button class="btn"><a href="">Download Resume</a></button>
         </div>
         <div id="pic">
           <img
-            src="https://www.nicepng.com/png/full/266-2666972_software-developer.png"
+            src="https://camo.githubusercontent.com/a4c584bce1c41271485d28f92aaf9f581b3c88b68ca723b6edfd58b4ba988c2b/68747470733a2f2f63646e2e6472696262626c652e636f6d2f75736572732f313138373833362f73637265656e73686f74732f363533393432392f70726f6772616d65722e676966"
             alt="developer"
           />
         </div>
       </div>
       <div id="section2">
         <div id="details">
-          <div>
-            <h1 class="head">About</h1>
-          </div>
-          <div class="info">
+            <h1>About</h1>
             <p>
               Adaptable and flexible Java backend developer capable of writing
               production ready code.Looking forward to learning and working with
               new technologies which can help to achieve personal and
               organizational goals.
             </p>
-          </div>
         </div>
         <div id="photo">
           <img src="./Abhi P (1).png" alt="profile" />
@@ -121,7 +130,7 @@
             <img src="./hero icons/hibernate.491x512.png" alt="hibernate" />
           </div>
           <div>
-            <img src="./hero icons/aws.256x153.png" alt="aws" />
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTDecwU4TWAFxZQpuEQlny6QAdqjXDe_5Z9QxhoW9f2Vg&s" alt="aws" />
           </div>
         </div>
       </div>
@@ -256,5 +265,13 @@
   <script src="https://unpkg.com/github-calendar@latest/dist/github-calendar.min.js"></script>
   <script>
     GitHubCalendar(".calendar", "abhishek11125", { responsive: true });
+
+    function shownav() {
+      document.getElementById("toggler").style.display = "flex";
+    }
+
+    function closenav() {
+      document.getElementById("toggler").style.display = "none";
+    }
   </script>
 </html>
