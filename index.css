@@ -300,7 +300,7 @@ iframe {
 #toggler {
   display: none;
 }
-@media (max-width: 7680px){
+@media (max-width: 768px){
   #section1{
     min-height: 300px;
   }
