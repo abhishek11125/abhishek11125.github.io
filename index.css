@@ -271,7 +271,7 @@ iframe {
   justify-content: space-around;
 }
 #data {
-  padding: 3rem;
+  width: 100%;
 }
 #data > div {
   height: 100%;
@@ -308,7 +308,7 @@ iframe {
   margin-left: 6rem;
 }
 #form {
-  padding: 3rem;
+  width: 100%;
 }
 #form > div {
   border: 1px solid blue;
