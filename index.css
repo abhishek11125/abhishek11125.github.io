@@ -261,6 +261,7 @@ iframe {
 #section6 {
   min-height: 200px;
   padding-top: rem;
+  margin: auto;
 }
 #contact {
   width: fit-content;
@@ -273,14 +274,15 @@ iframe {
   grid-template-columns: repeat(2, 1fr);
   gap: 5rem;
   justify-content: space-around;
+  margin: auto;
 }
 #data {
   width: 100%;
   margin: auto;
+  width: fit-content;
 }
 #data > div {
   height: 100%;
-
 }
 #data > div > div {
   display: flex;
@@ -290,23 +292,23 @@ iframe {
   margin-top: 6rem;
   margin-left: 30rem;
 }
-#data > div > div> i>span{
+#data > div > div > i > span {
   font-weight: 200;
   font-size: 20px;
 }
-#data > div > div>div{
+#data > div > div > div {
   display: flex;
   gap: 1rem;
   width: fit-content;
 }
-#data > div > div>div>a{
+#data > div > div > div > a {
   color: black;
 }
 #form {
   width: 100%;
+  margin: auto;
 }
 #form > div {
-  border: 1px solid blue;
   height: 100%;
 }
 form {
@@ -416,7 +418,7 @@ form > button {
     height: 60vh;
     width: 100%;
     z-index: 20;
-    display: flex;
+    display: block;
     flex-direction: column;
     align-items: center;
     justify-content: space-around;
@@ -445,7 +447,7 @@ form > button {
   #section2 {
     width: 100%;
     display: grid;
-    grid-template-columns: repeat(1,1fr);
+    grid-template-columns: repeat(1, 1fr);
     align-items: center;
     justify-content: center;
     min-height: 500px;
@@ -464,7 +466,7 @@ form > button {
     gap: 20px;
     padding: 20px;
   }
-  #details{
+  #details {
     margin: auto;
   }
   #details > h1 {
@@ -479,10 +481,10 @@ form > button {
     line-height: 15px;
     font-weight: 500;
   }
-  #photo{
+  #photo {
     margin: auto;
   }
-  #photo>img{
+  #photo > img {
     width: 50%;
     display: block;
     margin: auto;
