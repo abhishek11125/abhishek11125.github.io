@@ -148,7 +148,7 @@ nav > ul > li > a:hover {
   min-height: 900px;
 }
 #section4 > div:first-child {
-  margin: 30px auto;
+  margin: 40px auto;
   width: fit-content;
   text-decoration: underline;
 }
@@ -156,19 +156,26 @@ nav > ul > li > a:hover {
   width: 80%;
   margin: auto;
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 20px;
+  grid-template-columns: repeat(2, 1fr); 
+  gap: 20px; 
 }
 .card {
   box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
   padding: 20px;
   border-radius: 8px;
   line-height: 25px;
+  text-align: justify;
+  padding: 40px;
+}
+.image{
+  width: 100%;
+  height: 50%;
 }
 .card-img-top {
+  display: block;
   width: 100%;
-  height: 40%;
-  object-fit: fill;
+  height: 100%;
+  object-fit: cover;
 }
 .card-title {
   font-size: large;
@@ -181,49 +188,27 @@ nav > ul > li > a:hover {
   font-size: 30px;
   margin: 2rem, 0rem, 2rem, 4rem;
 }
-#card-link1 {
+#card-link {
   display: flex;
   gap: 10px;
 }
-#card-link1 > div {
+#card-link > div {
   background-color: black;
   padding: 10px;
   margin-top: 1.5rem;
 }
-#card-link1 > div > a {
-  text-decoration: none;
-  color: white;
-}
-#card-link2 {
-  display: flex;
-  gap: 10px;
-}
-#card-link2 > div {
-  background-color: black;
-  padding: 10px;
-}
-#card-link2 > div > a {
-  text-decoration: none;
-  color: white;
-}
-#card-link3 {
-  display: flex;
-  gap: 10px;
-}
-#card-link3 > div {
-  background-color: black;
-  padding: 10px;
-  margin-top: 3rem;
-}
-#card-link3 > div > a {
+#card-link > div > a {
   text-decoration: none;
   color: white;
 }
 iframe {
   width: 100%;
 }
-.card-body > i {
+.card-body>i{
   margin-left: 40px;
+}
+.card-body>h3{
+  margin: 12px 0px;
 }
 #section5 {
   width: 100%;
@@ -265,11 +250,32 @@ iframe {
   padding-top: rem;
   margin: auto;
 }
-#contact {
+ #contact {
   width: fit-content;
   margin: 2rem auto;
   text-decoration: underline;
 }
+#data{
+  text-align: center;
+  background-color: lightgray;
+  padding: 1rem;
+}
+#data>h4{
+  padding: 0.5rem;
+}
+#links>a>i{
+  color: black;
+  margin-left: 0.5rem;
+}
+#end{
+  background-color: #001858;
+  padding: 1rem;
+}
+#end>p{
+  text-align: center;
+  color: white;
+}
+/*
 #section6 > div:nth-child(2) {
   margin: auto;
   display: grid;
@@ -341,7 +347,7 @@ form > button {
   cursor: pointer;
   border-radius: 1rem;
   margin-left: 2rem;
-}
+} */
 @media (max-width: 768px) {
   #section1 {
     min-height: 300px;
@@ -421,10 +427,7 @@ form > button {
     height: 60vh;
     width: 100%;
     z-index: 20;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-around;
+    text-align: center;
   }
   #toggler > i {
     position: absolute;
@@ -432,9 +435,12 @@ form > button {
     top: 0.5rem;
     font-size: 20px;
   }
+  #toggler>ul{
+    width: 100%;
+  }
   #toggler > ul > li {
     list-style: none;
-    margin-top: 8px;
+    margin-top: 14px;
   }
   #toggler > ul > li > a {
     text-decoration: none;
