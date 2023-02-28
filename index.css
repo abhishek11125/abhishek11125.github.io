@@ -157,9 +157,10 @@ nav > ul > li > a:hover {
   margin: auto;
   display: grid;
   grid-template-columns: repeat(2, 1fr); 
-  gap: 20px; 
+  gap: 20px 0px;
 }
 .card {
+  width: 85%;
   box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
   padding: 20px;
   border-radius: 8px;
