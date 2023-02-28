@@ -40,7 +40,7 @@
             <a href="#section4">Projects</a>
           </li>
           <li>
-            <a href="./Downloads/Abhishek_Kagale_Resume.pdf" download>Resume</a>
+            <a href="https://drive.google.com/file/d/1mcCRDIrBsnxyFo9XMU0HyrLUeKmOjee6/view?usp=sharing" target="_blank">Resume</a>
           </li>
           <li>
             <a href="#section6">Contact</a>
@@ -65,9 +65,7 @@
               <a href="#section4">Projects</a>
             </li>
             <li>
-              <a href="./Downloads/Abhishek_Kagale_Resume.pdf" download
-                >Resume</a
-              >
+              <a href="https://drive.google.com/file/d/1mcCRDIrBsnxyFo9XMU0HyrLUeKmOjee6/view?usp=sharing" target="_blank">Resume</a>
             </li>
             <li>
               <a href="#section6">Contact</a>
@@ -81,11 +79,8 @@
           <h1>I'm, Abhishek <span>Kagale</span></h1>
           <h1>Java Backend Developer</h1>
 
-          <button class="btn">
-            <a href="./Downloads/Abhishek_Kagale_Resume.pdf" download
-              >Download Resume</a
-            >
-          </button>
+          <button class="btn" onclick="download('https://drive.google.com/u/0/uc?id=1mcCRDIrBsnxyFo9XMU0HyrLUeKmOjee6&export=download')">
+          Download Resume</button>
         </div>
         <div id="pic">
           <img
@@ -368,5 +363,9 @@
     function closenav() {
       document.getElementById("toggler").style.display = "none";
     }
+    function download(url){
+    window.location.href=url;
+    window.open('https://drive.google.com/file/d/1mcCRDIrBsnxyFo9XMU0HyrLUeKmOjee6/view?usp=sharing');
+}
   </script>
 </html>
